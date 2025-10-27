@@ -1,15 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
-<!--- Code above this line will not be displayed on the browser -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Mannan Jindal | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- If your CSS is /css/style.css at the root (as in your screenshot), keep this: -->
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Portfolio website of Mannan Jindal — UW–Madison senior in Computer Engineering & Computer Science. Projects, resume, gallery, and contact." />
+</head>
 <body>
-<p> Hello world! </p>
-<p> My name is Mannan Jindal</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <h1>Mannan Jindal</h1>
+    <p class="tagline">Computer Engineering &amp; Computer Science @ UW–Madison</p>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a aria-current="page" href="index.html">Home</a></li>
+        <!-- Use these if your pages are in folders: about/index.html, etc. -->
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero / Intro -->
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Welcome</h2>
+      <p>
+        I’m <strong>Mannan</strong>, a senior at <em>UW–Madison</em> focused on computer
+        architecture, VLSI, and FPGA-accelerated systems. I enjoy building things that
+        sit at the intersection of hardware and software—from small neural nets on FPGAs
+        to distributed data tools.
+      </p>
+
+      <!-- Headshot or banner -->
+      <figure>
+        <img src="images/Headshot2.jpg" alt="Portrait of Mannan Jindal" width="360" />
+        <figcaption>Hi! Thanks for visiting my site.</figcaption>
+      </figure>
+    </section>
+
+    <!-- What’s on this site (unordered list + description list to satisfy requirements) -->
+    <section aria-labelledby="onsite-title">
+      <h3 id="onsite-title">On this site you’ll find</h3>
+      <ul>
+        <li><strong>About</strong> — a short bio and goals</li>
+        <li><strong>Projects</strong> — highlights with brief write-ups and links</li>
+        <li><strong>Résumé</strong> — experience, education, and skills</li>
+        <li><strong>Gallery</strong> — photos with captions</li>
+        <li><strong>Contact</strong> — how to reach me</li>
+      </ul>
+
+      <h3>Quick facts</h3>
+      <dl>
+        <dt>Focus</dt><dd>Computer Architecture, VLSI, FPGA Systems</dd>
+        <dt>Current</dt><dd>Cloud FPGA acceleration &amp; tools</dd>
+        <dt>Tooling</dt><dd>C/C++, Python, Verilog/VHDL, Cadence</dd>
+      </dl>
+    </section>
+
+    <!-- Quick Links (cards) -->
+    <section aria-labelledby="quicklinks-title">
+      <h3 id="quicklinks-title">Jump in</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>About</h3>
+          <p>Background, interests, and what I’m exploring next.</p>
+          <a href="about.html">Go to About</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Projects</h3>
+          <p>Selected builds: FPGA accelerators, data pipelines, and more.</p>
+          <a href="projects.html">See Projects</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Résumé</h3>
+          <p>Experience, education, and technical skills.</p>
+          <a href="resume.html">View Résumé</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Gallery</h3>
+          <p>A few snapshots with short captions.</p>
+          <a href="gallery.html">Open Gallery</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Contact</h3>
+          <p>Let’s connect—email form and links.</p>
+          <a href="contact.html">Contact Me</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- External resource (meaningful link text) -->
+    <section aria-labelledby="learnmore-title">
+      <h3 id="learnmore-title">Learn more</h3>
+      <p>
+        I often reference
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>
+        when I’m writing HTML/CSS or reviewing JS APIs.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Mannan Jindal</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
