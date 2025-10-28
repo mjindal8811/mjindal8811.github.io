@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Mannan Jindal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Learn more about Mannan Jindal — Computer Engineering & Computer Science student at the University of Wisconsin–Madison." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <h1>Mannan Jindal</h1>
+    <p class="tagline">Computer Engineering &amp; Computer Science @ UW–Madison</p>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a aria-current="page" href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <strong>Mannan Jindal</strong> — a student at the 
+        <em>University of Wisconsin–Madison</em>, where I’m pursuing a double major in 
+        <strong>Computer Engineering</strong> and <strong>Computer Science</strong>.
+        I’m deeply fascinated by how hardware and software interact to bring complex systems to life.
+        Whether I’m writing Verilog for an FPGA or debugging a distributed program, I enjoy
+        the process of turning abstract ideas into tangible, working results.
+      </p>
+
+      <p>
+        Outside the classroom, I love exploring new challenges and experiences that keep me balanced and creative.
+        When I’m not coding, you’ll probably find me on the water <em>sailing</em> or <em>windsurfing</em>,
+        or spending a quiet evening playing my <em>guitar</em>.
+        These hobbies remind me of the importance of rhythm — both in music and in life.
+      </p>
+    </section>
+
+    <section>
+      <h3>Favorites</h3>
+
+      <figure>
+        <img src="images/grownups.jpg" alt="Poster of the movie Grown Ups" width="300" />
+        <figcaption>Favorite Movie: <strong>Grown Ups</strong></figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/modernfamily.jpg" alt="Cast photo from Modern Family" width="300" />
+        <figcaption>Favorite Show: <strong>Modern Family</strong></figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/adamsandler.jpg" alt="Portrait of Adam Sandler" width="300" />
+        <figcaption>Favorite Actor: <strong>Adam Sandler</strong></figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Mannan Jindal</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
