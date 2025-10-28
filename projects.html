@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Mannan Jindal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected engineering projects by Mannan Jindal: FPGA/Verilog, embedded systems, OS, and digital design." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <h1>Mannan Jindal</h1>
+    <p class="tagline">Computer Engineering &amp; Computer Science @ UW–Madison</p>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a aria-current="page" href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Projects</h2>
+
+    <!-- Grid of project cards (styled by .projects-grid & .project-card in your CSS) -->
+    <section class="projects-grid" aria-label="Project list">
+
+      <!-- WISC-S25 -->
+      <article class="project-card">
+        <h3>WISC-S25 Pipelined Processor</h3>
+        <p>
+          <span class="badge badge-sand">Verilog</span>
+          <span class="badge badge-brick">ModelSim</span>
+          <span class="badge badge-khaki">Computer Architecture</span>
+          &nbsp;•&nbsp;<time datetime="2025-04">April 2025</time>
+        </p>
+        <ul>
+          <li>Designed a 16-bit single-cycle processor for the WISC-S25 ISA, supporting compute, memory, and control operations.</li>
+          <li>Built a 5-stage pipelined CPU with hazard detection, data forwarding, and register bypassing for efficient execution.</li>
+          <li>Integrated 2&nbsp;KB I-cache and D-cache (2-way set-associative, 16&nbsp;B blocks) with custom controllers and write-through, write-allocate policies.</li>
+          <li>Implemented pipelined memory access, cache-miss FSMs, and arbitration logic for seamless main-memory interaction.</li>
+        </ul>
+      </article>
+
+      <!-- Whack-a-mole -->
+      <article class="project-card">
+        <h3>Whack-a-Mole (Custom PCB + Firmware)</h3>
+        <p>
+          <span class="badge badge-sand">Altium Designer</span>
+          <span class="badge badge-clay">ARM Cortex-M</span>
+          <span class="badge badge-rust">Embedded C</span>
+          &nbsp;•&nbsp;<time datetime="2025-04">April 2025</time>
+        </p>
+        <ul>
+          <li>Designed a custom PCB in Altium, integrating an Infineon-based ARM Cortex-M MCU for a responsive game platform; emphasized meticulous schematic capture and layout optimization.</li>
+          <li>Developed firmware in ModusToolbox to handle gameplay, peripherals, and timing—leveraging vendor documentation for precise component configuration.</li>
+        </ul>
+      </article>
+
+      <!-- xv6 -->
+      <article class="project-card">
+        <h3>xv6 Multi-Page Memory Management</h3>
+        <p>
+          <span class="badge badge-brick">C</span>
+          <span class="badge badge-sand">xv6</span>
+          <span class="badge badge-khaki">Paging &amp; Syscalls</span>
+          &nbsp;•&nbsp;<time datetime="2025-03">March 2025</time>
+        </p>
+        <ul>
+          <li>Extended xv6 to support user-level allocation of both 4&nbsp;KB and 4&nbsp;MB pages with isolated pools and dynamic reuse logic.</li>
+          <li>Integrated Transparent Huge Page (THP) behavior with syscall toggles and size-aware allocation policies for <code>malloc</code>.</li>
+          <li>Enhanced virtual-to-physical mapping and memory subsystem for multi-size pages, adding alignment safeguards, PDE-level changes, and kernel-side safety checks.</li>
+        </ul>
+      </article>
+
+      <!-- Knight's tour -->
+      <article class="project-card">
+        <h3>Knight’s Tour (High-Speed Digital System)</h3>
+        <p>
+          <span class="badge badge-clay">SystemVerilog</span>
+          <span class="badge badge-sand">Synopsys Tools</span>
+          <span class="badge badge-rust">DE0 FPGA</span>
+          <span class="badge badge-khaki">ModelSim/Questa</span>
+          &nbsp;•&nbsp;<time datetime="2024-12">Dec 2024</time>
+        </p>
+        <ul>
+          <li>Achieved 333&nbsp;MHz by tightening area and timing through targeted synthesis strategies; used coverage analysis to refine tests and boost reliability with post-synthesis simulations.</li>
+          <li>Engineered multiple SystemVerilog blocks and integrated SPI/UART peripherals; verified with rigorous testbenches and real-time debug on a DE0 FPGA board.</li>
+        </ul>
+      </article>
+
+      <!-- Press-Your-Luck -->
+      <article class="project-card">
+        <h3>Press-Your-Luck (Dual-Board RTOS Game)</h3>
+        <p>
+          <span class="badge badge-rust">PSoC Creator</span>
+          <span class="badge badge-khaki">ModusToolbox</span>
+          <span class="badge badge-sand">CYHAL APIs</span>
+          <span class="badge badge-clay">FreeRTOS</span>
+          &nbsp;•&nbsp;<time datetime="2024-11">Nov 2024</time>
+        </p>
+        <ul>
+          <li>Built an interactive game on a custom ECE&nbsp;353 board (PSoC6, Cortex-M), managing peripherals from board/company schematics and CYHAL docs; optimized responsiveness with interrupt-driven logic.</li>
+          <li>Integrated FreeRTOS for robust HW/SW synchronization; implemented SPI, I<sup>2</sup>C, and UART between dual boards to enable a multiplayer experience.</li>
+        </ul>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Mannan Jindal</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
