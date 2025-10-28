@@ -130,7 +130,7 @@ img{
   box-shadow: var(--shadow-1);
   border: 1px solid var(--border);
 }
-figcaption{ color: var(--mush); }
+figcaption{ color: #5a4f48; }
 
 /* Lists */
 ul{ padding-left: 1.2rem; }
