@@ -25,7 +25,8 @@
 
   /* Typography */
   --font-serif: "Times New Roman", Times, serif;
-
+  --font-serif-alt: Georgia, "Times New Roman", serif;
+  
   /* Layout tokens */
   --page-max: 1024px;
   --radius-lg: 12px;
@@ -59,7 +60,7 @@ body{
 
 /* Headings — same serif for a classic look */
 h1, h2, h3{
-  font-family: var(--font-serif);
+  font-family: var(--font-serif-alt);
   letter-spacing: .1px;
   color: var(--brick);
 }
