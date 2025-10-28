@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Résumé | Mannan Jindal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Résumé of Mannan Jindal — Computer Engineering & Computer Science at UW–Madison." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <h1>Mannan Jindal</h1>
+    <p class="tagline">Computer Engineering &amp; Computer Science @ UW–Madison</p>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a aria-current="page" href="resume.html">Résumé</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="resume">
+    <!-- EDUCATION -->
+    <section aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <article>
+        <h3>University of Wisconsin–Madison <span class="badge badge-khaki">Madison, WI</span></h3>
+        <p><strong>Bachelor of Science</strong> — Double Major in <strong>Computer Engineering</strong> &amp; <strong>Computer Science</strong></p>
+        <p><em>Sept 2022 – May 2026</em></p>
+        <ul>
+          <li><strong>GPA:</strong> 3.71/4.0</li>
+          <li><strong>Academic Honors:</strong> College of Engineering Dean’s Honor List (Fall ’22, Spring ’23, Fall ’23, Spring ’24, Fall ’24, Spring ’25)</li>
+          <li><strong>Relevant Coursework:</strong> Digital System Design &amp; Synthesis, Computer Architecture, Microprocessor Systems &amp; Laboratory, Operating Systems, Data Structures &amp; Algorithms, Electronic Circuits, Signals Information &amp; Computation, Printed &amp; Flexible Electronics, VLSI</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+
+      <article>
+        <header>
+          <h3>Undergraduate Research Assistant — UW–Madison (Department of ECE)
+            <span class="badge badge-khaki">Madison, WI</span>
+          </h3>
+          <p><em>June 2024 – Present</em></p>
+        </header>
+        <ul>
+          <li>Enhancing the <strong>1st-CLaaS</strong> framework to enable real-time local and remote FPGA access via <strong>PYNQ</strong> on AWS EC2 (<code>c4.2xlarge</code> &amp; <code>f2.6xlarge</code>); updating a <strong>C-based webserver</strong> for WebSockets/REST communication and resolving infrastructure issues including <strong>Makefile</strong> bugs, <strong>Terraform</strong> support, and dynamic AWS credential handling.</li>
+          <li>Developing and deploying custom FPGA kernels in <strong>SystemVerilog</strong> and <strong>TL-Verilog</strong> (makerchip.com), aiming to implement these innovations locally on FPGAs through 1st-CLaaS infrastructure on AWS, leveraging Ubuntu and the framework’s API for precise hardware emulation.</li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+          <h3>Peer Mentor — ECE 353: Introduction to Microprocessor Systems — UW–Madison (Department of ECE)
+            <span class="badge badge-khaki">Madison, WI</span>
+          </h3>
+          <p><em>January 2025 – Present</em></p>
+        </header>
+        <ul>
+          <li>Tutored <strong>100+ students</strong> in advanced C programming, memory management, and bit-level manipulation on <strong>PSoC6 MCUs</strong>, earning <strong>70+ positive reviews</strong>.</li>
+          <li>Provided detailed guidance on direct <strong>register-level programming</strong> and real-time systems control using <strong>FreeRTOS</strong>, focusing on hardware interfacing through <strong>interrupts</strong>, <strong>SPI</strong>, and <strong>I²C</strong> communications, and task management.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <article>
+        <h3>Technologies</h3>
+        <p>
+          x86 arch, xv6, RISC-V arch, Cadence, PSoC, ARM Cortex, FreeRTOS, FPGA (Xilinx, Altera, etc.), LTSpice,
+          SolidWorks, AWS, Modus Toolbox, CYHAL APIs, ModelSim, Altium Designer, git, Ubuntu, Vitis/Vivado,
+          Synopsys tools, AutoCAD, Arduino
+        </p>
+
+        <h3>Programming Languages</h3>
+        <p>
+          Java (Adv.), C (Adv.), HTML, CSS, MIPS ISA, MATLAB, Python (Intermediate), Verilog, SystemVerilog (Adv.)
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Mannan Jindal</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
