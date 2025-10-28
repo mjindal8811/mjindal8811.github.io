@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Mannan Jindal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Mannan Jindal — phone, email, LinkedIn, and a quick message form." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <h1>Mannan Jindal</h1>
+    <p class="tagline">Computer Engineering &amp; Computer Science @ UW–Madison</p>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a aria-current="page" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Contact</h2>
+
+    <!-- Contact info -->
+    <section aria-labelledby="reach-title">
+      <h3 id="reach-title">Reach me</h3>
+      <address>
+        <dl>
+          <dt>Phone</dt>
+          <dd><a href="tel:+16087204507">+1 (608) 720-4507</a></dd>
+
+          <dt>Email</dt>
+          <dd><a href="mailto:mjindal2@wisc.edu">mjindal2@wisc.edu</a></dd>
+
+          <dt>LinkedIn</dt>
+          <dd>
+            <a href="https://www.linkedin.com/in/mannan-jindal-0550ba209/" target="_blank" rel="noopener">
+              Mannan Jindal
+            </a>
+          </dd>
+        </dl>
+      </address>
+    </section>
+
+    <!-- Simple message form -->
+    <section aria-labelledby="form-title">
+      <h3 id="form-title">Send a message</h3>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div>
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div>
+          <label for="subject">Subject (optional)</label>
+          <input id="subject" name="subject" type="text" />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Mannan Jindal</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
