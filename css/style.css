@@ -184,7 +184,7 @@ input:focus, textarea:focus, a:focus, button:focus{
   display:flex; flex-direction:column; gap:.5rem;
   box-shadow: var(--shadow-1);
 }
-.project-card h3{ color: var(--sand); margin:.25rem 0; }
+.project-card h3{ color: var(--brick); margin:.25rem 0; }
 .project-card p{ color: var(--ink-2); }
 .project-card a{
   margin-top:auto;
@@ -209,7 +209,7 @@ input:focus, textarea:focus, a:focus, button:focus{
   display:inline-block; padding:.25rem .5rem; border-radius:999px; font-size:.85rem;
 }
 .badge-brick{ background: var(--brick); color:#fff; }
-.badge-sand{  background: var(--sand);  color:#fff; }
+.badge-sand{  background: var(--sand);  color: var(--ink); }
 .badge-rust{  background: var(--rust);  color:#fff; }
 .badge-clay{  background: var(--clay);  color:#fff; }
 .badge-khaki{ background: var(--khaki); color:#1b1b1b; }
